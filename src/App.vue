@@ -36,9 +36,9 @@
             influencers and social media personalities find their voices amplified and their dreams empowered. We're more than just a platform; we're a global community united by the belief that your influence can ignite real change. Create campaigns that inspire in categories like arts,tech & design, film & photography, and music, connecting with backers who share your vision. Beyond financial support, Sponsorrdotcom offers a network of empowerment, collaboration, and celebration. With a reach that transcends borders, we're here to turn your aspirations into meaningful impact, one campaign at a time. Join Sponsorrdotcom today and embrace a journey where your influence transforms lives.
         </p>
         <div :class="$style.aboutImgDiv">
-          <img :class="$style.aboutImg" src="../public/red-heart@2x.png" alt="heart"/>
-          <img :class="$style.aboutImg" src="../public/clapping-hands-medium-dark-skin-tone@2x.png" alt="hands" />
-          <img :class="$style.aboutImg" src="../public/hundred-points@2x.png" alt="100" />
+          <img :class="$style.aboutImg" src="/red-heart@2x.png" alt="heart"/>
+          <img :class="$style.aboutImg" src="/clapping-hands-medium-dark-skin-tone@2x.png" alt="hands" />
+          <img :class="$style.aboutImg" src="/hundred-points@2x.png" alt="100" />
         </div>
       </section>
       <section :class="$style.works">
@@ -265,8 +265,7 @@
       margin-top: 1.25rem;
       display: flex;
       justify-content: center;
-      gap: 1.5rem;
-      
+      gap: 1.5rem;  
     }
     .aboutImg{
       width: 4.5rem;
