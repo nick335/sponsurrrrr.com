@@ -1,290 +1,124 @@
 <template>
-    <div :class="$style.landingPage">
-      <section :class="$style.header5" id="home">
-        <img :class="$style.header5Child" alt="" src="/rectangle-1@2x.png" />
-        <div :class="$style.header5Item" />
-        <div :class="$style.frameParent">
-          <div :class="$style.aHighQualitySolutParent">
-            <h1 :class="$style.aHighQualitySolut">
-              Empowering Voices, Creating Change, Nurturing Dreams, One Support at
-              a Time
+    <main :class="$style.main">
+      <div :class="$style.containerBg">
+        <div :class="$style.containerOverlay">
+          <nav :class="$style.nav">
+            <ul :class="$style.navUl">
+              <li :class="$style.navLi">How it works</li>
+              <li :class="$style.navLi">Contact Us</li>
+              <li><img :class="$style.navLiImg" src="/brandbrinstagram.svg"  alt="socialIcons" /></li>
+              <li><img :class="$style.navLiImg" src="/brandbrlinkedin.svg" alt="socialIcons" /></li>
+              <li><img :class="$style.navLiImg" src="/brandbrtwitter.svg"  alt="socialIcons" /></li>
+            </ul>
+              <img src="/mask-group@2x.png" alt="logo" :class="$style.navLogo"/>
+            <div :class="$style.navBtnDiv">
+              <button :class="$style.navLogin">Login</button>
+              <button :class="$style.btnprimary">join Beta</button>
+            </div>
+          </nav>
+          <section :class="$style.hero">
+            <h1 :class="$style.heroheader">
+                Empowering Voices, Fuelling Creativity
             </h1>
-            <div :class="$style.aHighQualitySolut1">
-              Discover Sponsorrdotcom: Where Nigerian influencers thrive, turning
-              dreams into reality. Join a supportive community empowering your
-              impact – whether igniting movements, showcasing creativity, or
-              launching businesses. Elevate your influence with Sponsorrdotcom
+            <p :class="$style.heroPara">Sponsorrdotcom helps you ignite movements, showcase creativity, recieve donations and raise funding for your business or social causes</p>
+            <div :class="$style.heroBtndiv">
+              <button :class="$style.btnprimary">join Beta</button>
+              <button :class="$style.btnsecondary">Learn More</button>
             </div>
-          </div>
-          <div :class="$style.bigFillParent">
-            <button :class="$style.bigFill">
-              <div :class="$style.signUp">Join Beta</div>
-            </button>
-            <button :class="$style.bigFill1">
-              <div :class="$style.signUp1">Learn More</div>
-            </button>
-          </div>
+          </section>
         </div>
-        <div :class="$style.bg" />
-        <div :class="$style.leftNavItems">
-          <div />
-        </div>
-        <div :class="$style.maskGroupParent">
-          <img :class="$style.maskGroupIcon" alt="" src="/mask-group@2x.png" />
-          <div :class="$style.bigFillGroup">
-            <button :class="$style.bigFill2">
-              <div :class="$style.signUp">Login</div>
-            </button>
-            <button :class="$style.bigFill3">
-              <div :class="$style.signUp">Join Beta</div>
-            </button>
-          </div>
-          <div :class="$style.labelParent">
-            <div :class="$style.label">How it works</div>
-            <div :class="$style.label">Contact Us</div>
-            <img
-              :class="$style.brandbrInstagramIcon"
-              alt=""
-              src="/brandbrinstagram.svg"
-            />
-            <img
-              :class="$style.brandbrInstagramIcon"
-              alt=""
-              src="/brandbrlinkedin.svg"
-            />
-            <img
-              :class="$style.brandbrInstagramIcon"
-              alt=""
-              src="/brandbrtwitter.svg"
-            />
-          </div>
-        </div>
-      </section>
-      <section :class="$style.steps4">
-        <div :class="$style.sectionHeading">
-          <h1 :class="$style.aHighQualitySolut">Sponsorrdotcom</h1>
-          <h3 :class="$style.sectionTitle1">
+        
+      </div>
+      <section :class="$style.about">
+        <h2 :class="$style.aboutheader">Sponsorrdotcom</h2>
+        <p :class="$style.aboutpara">
             Step into the vibrant world of Sponsorrdotcom, where Nigerian
-            influencers and social media personalities find their voices amplified
-            and their dreams empowered. We're more than just a platform; we're a
-            global community united by the belief that your influence can ignite
-            real change. Create campaigns that inspire in categories like arts,
-            tech & design, film & photography, and music, connecting with backers
-            who share your vision. Beyond financial support, Sponsorrdotcom offers
-            a network of empowerment, collaboration, and celebration. With a reach
-            that transcends borders, we're here to turn your aspirations into
-            meaningful impact, one campaign at a time. Join Sponsorrdotcom today
-            and embrace a journey where your influence transforms lives.
-          </h3>
-          <div :class="$style.redHeartParent">
-            <div :class="$style.redHeart">
-              <img :class="$style.redHeartIcon" alt="" src="/red-heart@2x.png" />
+            influencers and social media personalities find their voices amplified and their dreams empowered. We're more than just a platform; we're a global community united by the belief that your influence can ignite real change. Create campaigns that inspire in categories like arts,tech & design, film & photography, and music, connecting with backers who share your vision. Beyond financial support, Sponsorrdotcom offers a network of empowerment, collaboration, and celebration. With a reach that transcends borders, we're here to turn your aspirations into meaningful impact, one campaign at a time. Join Sponsorrdotcom today and embrace a journey where your influence transforms lives.
+        </p>
+        <div :class="$style.aboutImgDiv">
+          <img :class="$style.aboutImg" src="../public/red-heart@2x.png" alt="heart"/>
+          <img :class="$style.aboutImg" src="../public/clapping-hands-medium-dark-skin-tone@2x.png" alt="hands" />
+          <img :class="$style.aboutImg" src="../public/hundred-points@2x.png" alt="100" />
+        </div>
+      </section>
+      <section :class="$style.works">
+        <h2 :class="$style.worksheader">How it works</h2>
+        <div :class="$style.workscontainer"> 
+          <div :class="$style.work">
+            <img :class="$style.workImg" src="/rocket@2x.png" alt="rocket" />
+            <h3 :class="$style.workheader">Launch Your Campaign</h3>
+            <p :class="$style.workpara">
+              Kickstart your journey by crafting a compelling campaign on Sponsorrdotcom. Present your aspirations, objectives, and the transformative impact you aim to achieve. No matter if it's a social cause, artistic endeavor, or entrepreneurial pursuit, your campaign serves as the platform to inspire support</p>
+          </div>
+          <div :class="$style.work">
+            <img :class="$style.workImg" src="/globe-showing-europe-africa@2x.png" alt="globe" />
+            <h3 :class="$style.workheader">Garner Global Support</h3>
+            <p :class="$style.workpara">
+              Harness the potential of a worldwide audience. As individuals resonate with your mission, they can contribute funds to your campaign, translating their belief in your cause into tangible action. Witness your influence expand as your dreams start to materialize.</p>
+          </div>
+          <div :class="$style.work">
+            <img :class="$style.workImg" src="/flexed-biceps-medium-dark-skin-tone@2x.png" alt="muscle" />
+            <h3 :class="$style.workheader">Power Your Impact</h3>
+            <p :class="$style.workpara">
+              With the funds you've garnered, bring your dreams to fruition.Whether you're creating change within your community or reaching an international stage, Sponsorrdotcom is your springboard. Share progress updates, engage with your supporters, and witness how your influence triggers positive transformations.t</p>
+          </div>
+        </div>
+        <div :class="$style.workbtnDiv">
+          <button :class="$style.btnprimary">Join Beta</button>
+        </div>
+      </section>
+      <section :class="$style.categories">
+        <h2 :class="$style.categoriesHeader">Categories</h2>
+        <div :class="$style.categoriescontainer">
+          <div :class="$style.category">
+            <img :class="$style.categoryImg" src='/artist-palette@2x.png' alt='art' />
+            <h3 :class="$style.categoryheader">Arts</h3>
+            <p :class="$style.categorypara">
+              Unleash your creativity and showcase your artistic brilliance in this category. Whether you're a painter, sculptor, or mixed media artist, this is where you can gather support for you innovative projects that bring beauty and emotion to life</p>
+            <div :class="$style.categorybtnDiv">
+              <button :class="$style.btnprimary">Join Beta</button>
             </div>
-            <div :class="$style.redHeart">
-              <img
-                :class="$style.redHeartIcon"
-                alt=""
-                src="/clapping-hands-medium-dark-skin-tone@2x.png"
-              />
-            </div>
-            <div :class="$style.redHeart">
-              <img
-                :class="$style.redHeartIcon"
-                alt=""
-                src="/hundred-points@2x.png"
-              />
+          </div>
+          <div :class="$style.category">
+            <img :class="$style.categoryImg" src='/technologist-medium-skin-tone@2x.png' alt='technology' />
+            <h3 :class="$style.categoryheader">Tech and Design</h3>
+            <p :class="$style.categorypara">
+              Dive into the world of technology and design innovation. Whether you're developing apps, designing user interfaces, or engineering groundbreaking solutions, this category provides the platform to fund your technological visions that shape the future.</p>
+            <div :class="$style.categorybtnDiv">
+              <button :class="$style.btnprimary">Join Beta</button>
             </div>
           </div>
         </div>
-      </section>
-      <section :class="$style.steps5">
-        <div :class="$style.sectionHeading1">
-          <h1 :class="$style.sectionTitle2">How it works</h1>
-        </div>
-        <div :class="$style.setps">
-          <div :class="$style.div">
-            <div :class="$style.autoAddedFrame">
-              <div :class="$style.redHeart">
-                <img :class="$style.redHeartIcon" alt="" src="/rocket@2x.png" />
-              </div>
-            </div>
-            <div :class="$style.details">
-              <h3 :class="$style.heading">Launch Your Campaign</h3>
-              <div :class="$style.description">
-                Kickstart your journey by crafting a compelling campaign on
-                Sponsorrdotcom. Present your aspirations, objectives, and the
-                transformative impact you aim to achieve. No matter if it's a
-                social cause, artistic endeavor, or entrepreneurial pursuit, your
-                campaign serves as the platform to inspire support.
-              </div>
+        <div :class="$style.categoriescontainer">
+          <div :class="$style.category">
+            <img :class="$style.categoryImg" src='/film-projector@2x.png' alt='projector' />
+            <h3 :class="$style.categoryheader">Film and Photography</h3>
+            <p :class="$style.categorypara">
+              Capture moments, tell stories, and evoke emotions through film and photography. Whether you're a filmmaker, cinematographer, or a passionate photographer, this category is where your cinematic dreams can find the support they deserve.</p>
+            <div :class="$style.categorybtnDiv">
+              <button :class="$style.btnprimary">Join Beta</button>
             </div>
           </div>
-          <div :class="$style.div">
-            <div :class="$style.autoAddedFrame">
-              <div :class="$style.redHeart">
-                <img
-                  :class="$style.redHeartIcon"
-                  alt=""
-                  src="/globe-showing-europe-africa@2x.png"
-                />
-              </div>
-            </div>
-            <div :class="$style.details">
-              <h3 :class="$style.heading">Garner Global Support</h3>
-              <div :class="$style.description">
-                Harness the potential of a worldwide audience. As individuals
-                resonate with your mission, they can contribute funds to your
-                campaign, translating their belief in your cause into tangible
-                action. Witness your influence expand as your dreams start to
-                materialize.
-              </div>
-            </div>
-          </div>
-          <div :class="$style.div">
-            <div :class="$style.autoAddedFrame">
-              <div :class="$style.redHeart">
-                <img
-                  :class="$style.redHeartIcon"
-                  alt=""
-                  src="/flexed-biceps-medium-dark-skin-tone@2x.png"
-                />
-              </div>
-            </div>
-            <div :class="$style.details">
-              <h3 :class="$style.heading">Power Your Impact</h3>
-              <div :class="$style.description">
-                With the funds you've garnered, bring your dreams to fruition.
-                Whether you're creating change within your community or reaching
-                an international stage, Sponsorrdotcom is your springboard. Share
-                progress updates, engage with your supporters, and witness how
-                your influence triggers positive transformations.
-              </div>
+          <div :class="$style.category">
+            <img :class="$style.categoryImg" src='/musical-note@2x.png' alt='art' />
+            <h3 :class="$style.categoryheader">Music</h3>
+            <p :class="$style.categorypara">
+              Let your melodies resonate and rhythms reverberate in the music category. Musicians, composers, and vocalists, this is your stage to seek backing for concerts, album production, music videos, and projects that make the world sing.</p>
+            <div :class="$style.categorybtnDiv">
+              <button :class="$style.btnprimary">Join Beta</button>
             </div>
           </div>
         </div>
-        <button :class="$style.bigFill">
-          <div :class="$style.signUp">Join Beta</div>
-        </button>
+
       </section>
-      <section :class="$style.showcase10">
-        <img :class="$style.patternsIcon" alt="" src="/patterns.svg" />
-        <h1 :class="$style.lastWorks">Categories</h1>
-        <div :class="$style.works">
-          <div :class="$style.frameGroup">
-            <div :class="$style.textParent">
-              <div :class="$style.text">
-                <div :class="$style.artistPalette">
-                  <img
-                    :class="$style.redHeartIcon"
-                    alt=""
-                    src="/artist-palette@2x.png"
-                  />
-                </div>
-                <h3 :class="$style.heading">Arts</h3>
-                <div :class="$style.startupIsA">
-                  Unleash your creativity and showcase your artistic brilliance in
-                  this category. Whether you're a painter, sculptor, or mixed
-                  media artist, this is where you can gather support for your
-                  innovative projects that bring beauty and emotion to life.
-                </div>
-              </div>
-              <button :class="$style.bigFill">
-                <div :class="$style.signUp">Join Beta</div>
-              </button>
-            </div>
-            <div :class="$style.textParent">
-              <div :class="$style.text">
-                <div :class="$style.artistPalette">
-                  <img
-                    :class="$style.redHeartIcon"
-                    alt=""
-                    src="/technologist-medium-skin-tone@2x.png"
-                  />
-                </div>
-                <h3 :class="$style.heading">Tech and Design</h3>
-                <div :class="$style.startupIsA">
-                  Dive into the world of technology and design innovation. Whether
-                  you're developing apps, designing user interfaces, or
-                  engineering groundbreaking solutions, this category provides the
-                  platform to fund your technological visions that shape the
-                  future.
-                </div>
-              </div>
-              <button :class="$style.bigFill">
-                <div :class="$style.signUp">Join Beta</div>
-              </button>
-            </div>
-          </div>
-          <div :class="$style.frameGroup">
-            <div :class="$style.textParent">
-              <div :class="$style.text">
-                <div :class="$style.artistPalette">
-                  <img
-                    :class="$style.redHeartIcon"
-                    alt=""
-                    src="/film-projector@2x.png"
-                  />
-                </div>
-                <h3 :class="$style.heading">Film and Photography</h3>
-                <div :class="$style.startupIsA">
-                  Capture moments, tell stories, and evoke emotions through film
-                  and photography. Whether you're a filmmaker, cinematographer, or
-                  a passionate photographer, this category is where your cinematic
-                  dreams can find the support they deserve.
-                </div>
-              </div>
-              <button :class="$style.bigFill">
-                <div :class="$style.signUp">Join Beta</div>
-              </button>
-            </div>
-            <div :class="$style.textParent">
-              <div :class="$style.text3">
-                <div :class="$style.artistPalette">
-                  <img
-                    :class="$style.redHeartIcon"
-                    alt=""
-                    src="/musical-note@2x.png"
-                  />
-                </div>
-                <h3 :class="$style.heading">Music</h3>
-                <div :class="$style.startupIsA">
-                  Let your melodies resonate and rhythms reverberate in the music
-                  category. Musicians, composers, and vocalists, this is your
-                  stage to seek backing for concerts, album production, music
-                  videos, and projects that make the world sing.
-                </div>
-              </div>
-              <button :class="$style.bigFill">
-                <div :class="$style.signUp">Join Beta</div>
-              </button>
-            </div>
-          </div>
-        </div>
+      <section :class="$style.banner">
+        <h3 :class="$style.bannertext">Elevate Your Influence, Ignite Change - Join Sponsorrdotcom Today! <span><img src="/backhand-index-pointing-right-light-skin-tone@2x.png" :class="$style.bannerImg" alt="hand"/></span> </h3>
+        <button :class="$style.bannerBtn">Join Beta</button>
       </section>
-      <section :class="$style.callToAction11">
-        <div :class="$style.title">
-          <div :class="$style.twentyFiveAwesomeParent">
-            <h3 :class="$style.twentyFiveAwesome">
-              Elevate Your Influence, Ignite Change – Join Sponsorrdotcom Today!
-            </h3>
-            <div :class="$style.artistPalette">
-              <img
-                :class="$style.redHeartIcon"
-                alt=""
-                src="/backhand-index-pointing-right-light-skin-tone@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-        <button :class="$style.bigFill9">
-          <div :class="$style.signUp">Join Beta</div>
-        </button>
-      </section>
-      <section :class="$style.showcase101">
-        <img :class="$style.maskGroupIcon1" alt="" src="/mask-group1@2x.png" />
-        <div :class="$style.allOfThese1">©sponsurrdotcom 2023</div>
-      </section>
-    </div>
+    </main>
+    <footer :class="$style.footer">
+      
+    </footer>
   </template>
   <script lang="ts">
     import { defineComponent,  } from "vue";
@@ -294,762 +128,391 @@
     });
   </script>
   <style module>
-    .toolbarbackground {
-      position: absolute;
-      height: 45.57%;
-      width: 100%;
-      top: 53.16%;
-      right: 0%;
-      bottom: 1.27%;
-      left: 0%;
-      background-color: var(--colors-white);
-    }
-    .bottomborder {
-      position: absolute;
-      height: 1.27%;
-      width: 100%;
-      top: 98.73%;
-      right: 0%;
-      bottom: 0%;
-      left: 0%;
-      background-color: #dfe1e4;
-    }
-    .backIcon {
-      position: absolute;
-      height: 17.72%;
-      width: 1.04%;
-      top: 67.09%;
-      right: 98.06%;
-      bottom: 15.19%;
-      left: 0.9%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .forwardIcon {
-      position: absolute;
-      height: 17.72%;
-      width: 1.04%;
-      top: 67.09%;
-      right: 95.76%;
-      bottom: 15.19%;
-      left: 3.19%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .refreshIcon {
-      position: absolute;
-      height: 18.99%;
-      width: 1.22%;
-      top: 65.82%;
-      right: 93.37%;
-      bottom: 15.19%;
-      left: 5.42%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .addressareaIcon {
-      position: relative;
-      width: 1290px;
-      height: 28px;
-    }
-    .url {
-      position: absolute;
-      top: 65.82%;
-      left: 9.86%;
-      letter-spacing: 0.02em;
-    }
-    .lockIcon {
-      position: absolute;
-      height: 13.91%;
-      width: 0.56%;
-      top: 68.37%;
-      right: 90.97%;
-      bottom: 17.72%;
-      left: 8.47%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .menuIcon {
-      position: absolute;
-      height: 16.46%;
-      width: 0.21%;
-      top: 68.35%;
-      right: 1.46%;
-      bottom: 15.19%;
-      left: 98.33%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .tabbackground {
-      position: absolute;
-      height: 53.16%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      bottom: 46.84%;
-      left: 0%;
-      border-radius: var(--br-8xs) var(--br-8xs) 0px 0px;
-      background-color: #dee1e7;
-      box-shadow: 0px 1px 0px #f2f3f5 inset;
-    }
-    .unionIcon {
-      position: relative;
-      width: 252px;
-      height: 34px;
-    }
-    .pagetitle {
-      position: absolute;
-      width: 102.27%;
-      top: 6.25%;
-      left: 1.7%;
-      letter-spacing: 0.02em;
-      display: inline-block;
-    }
-    .pagetitlewrapper {
-      position: absolute;
-      height: 47.06%;
-      width: 69.84%;
-      top: 26.47%;
-      right: 14.29%;
-      bottom: 26.47%;
-      left: 15.87%;
-    }
-    .fadetitle {
-      position: absolute;
-      height: 58.82%;
-      width: 11.9%;
-      top: 20.59%;
-      right: 14.29%;
-      bottom: 20.59%;
-      left: 73.81%;
-      background: linear-gradient(-90deg, #fff, rgba(255, 255, 255, 0));
-    }
-    .logo {
-      position: absolute;
-      height: 47.06%;
-      width: 6.35%;
-      top: 26.47%;
-      right: 86.51%;
-      bottom: 26.47%;
-      left: 7.14%;
-      overflow: hidden;
-    }
-    .closetabIcon {
-      position: absolute;
-      height: 45.75%;
-      width: 6.17%;
-      top: 26.47%;
-      right: 5.73%;
-      bottom: 27.78%;
-      left: 88.1%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .tab {
-      position: absolute;
-      height: 43.04%;
-      width: 17.5%;
-      top: 10.13%;
-      right: 77.57%;
-      bottom: 46.84%;
-      left: 4.93%;
-      font-size: 12px;
-    }
-    .stoplightsIcon {
-      position: absolute;
-      height: 15.19%;
-      width: 3.61%;
-      top: 18.99%;
-      right: 95.56%;
-      bottom: 65.82%;
-      left: 0.83%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .newtabIcon {
-      position: absolute;
-      height: 17.72%;
-      width: 0.97%;
-      top: 22.78%;
-      right: 75.97%;
-      bottom: 59.49%;
-      left: 23.06%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-    }
-    .chrometopLight {
-      position: relative;
-      width: 1440px;
-      height: 79px;
-    }
-    .header5Child {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 1440px;
-      height: 879px;
-      object-fit: cover;
-    }
-    .header5Item {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      background-color: rgba(255, 93, 2, 0.3);
-      width: 1440px;
-      height: 879px;
-    }
-    .aHighQualitySolut {
-      margin: 0;
-      align-self: stretch;
-      position: relative;
-      font-size: inherit;
-      letter-spacing: 0.01em;
-      font-weight: 900;
-      font-family: inherit;
-    }
-    .aHighQualitySolut1 {
-      position: relative;
-      font-size: var(--font-size-xl);
-      letter-spacing: 0.01em;
-      font-weight: 500;
-      color: rgba(255, 255, 255, 0.8);
-      display: inline-block;
-      width: 936px;
-    }
-    .aHighQualitySolutParent {
-      align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-base);
-    }
-    .signUp {
-      position: relative;
-      font-size: var(--font-size-base);
-      letter-spacing: 0.01em;
-      font-weight: 800;
-      font-family: var(--font-noto-sans);
-      color: var(--colors-white);
-      text-align: center;
-    }
-    .bigFill {
-      cursor: pointer;
+  /* utilites */
+    .btnprimary{
+      outline: none;
       border: none;
-      padding: var(--padding-xl) var(--padding-21xl);
+      border-radius: 1rem;
       background-color: var(--color-orangered-100);
-      border-radius: var(--br-xl);
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: center;
-    }
-    .signUp1 {
-      position: relative;
-      font-size: var(--font-size-base);
-      letter-spacing: 0.01em;
+      padding: 0.9rem 2.4rem;
+      color: var(--colors-white);
+      font: var(--font-noto-sans);
       font-weight: 800;
-      font-family: var(--font-noto-sans);
-      color: var(--color-darkslategray);
-      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
     }
-    .bigFill1 {
-      cursor: pointer;
+    .btnsecondary{
+      outline: none;
       border: none;
-      padding: var(--padding-xl) var(--padding-21xl);
+      border-radius: 1rem;
       background-color: var(--color-antiquewhite);
-      border-radius: var(--br-xl);
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: center;
+      padding: 0.9rem 2.4rem;
+      color: #333;
+      font: var(--font-noto-sans);
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
     }
-    .bigFillParent {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-xl);
+    /*  */
+    .main{
+      color: var(--colors-white);
+      font-family: var(--font-noto-sans);
     }
-    .frameParent {
-      position: absolute;
-      top: calc(50% - 171px);
-      left: calc(50% - 557px);
-      width: 1114px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 50px;
+    .containerBg{
+      min-height: 45rem;
+      background-image: url('../public/rectangle-1@2x.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
-    .bg {
-      position: absolute;
-      height: 8.19%;
+    .containerOverlay{
       width: 100%;
-      top: 0%;
-      right: 0%;
-      bottom: 91.81%;
-      left: 0%;
-      background-color: var(--colors-white);
-      box-shadow: var(--navbar-shadow);
-      display: none;
+      min-height: 45rem;
+      background-color: rgba(255, 93, 2, 0.30);
     }
-    .leftNavItems {
-      position: absolute;
-      top: calc(50% - 386.5px);
-      left: 100px;
-      overflow: hidden;
+    .nav{
+      max-width: 90%;
+      margin: 0 auto;
+      padding-top: 2rem;
       display: flex;
-      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      justify-content: flex-start;
     }
-    .maskGroupIcon {
-      position: absolute;
-      top: 0px;
-      left: 537px;
-      width: 165px;
-      height: 66px;
-      object-fit: cover;
+    .navUl{
+      display: flex;
+      align-items: center;
+      column-gap: 1.5rem;
+      font-family: var(--font-noto-sans);
+      font-size: 1rem;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-weight: 800;
     }
-    .bigFill2 {
-      cursor: pointer;
-      border: 3px solid var(--color-antiquewhite);
-      padding: var(--padding-xl) var(--padding-21xl);
+    .navLiImg{
+      width: 1.5rem;
+      height: 1.5rem;
+      object-fit: fill;
+    }
+    .navLogo{
+      width: 10.3125rem;
+      height: 4.125rem;
+    }
+    .navBtnDiv{
+      display: flex;
+      column-gap: 1.25rem;
+    }
+    .navLogin{
+      outline: none;
+      border: 2px solid;
+      border-color:  var(--color-antiquewhite);
+      border-radius: 1rem;
       background-color: transparent;
-      border-radius: var(--br-xl);
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-    .bigFill3 {
-      cursor: pointer;
-      border: none;
-      padding: var(--padding-xl) var(--padding-21xl);
-      background-color: var(--color-orangered-100);
-      border-radius: var(--br-xl);
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-    .bigFillGroup {
-      position: absolute;
-      top: 2px;
-      right: 0px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-xl);
-    }
-    .label {
-      position: relative;
-      letter-spacing: 0.01em;
+      padding: 0.9rem 2.4rem;
+      color: var(--colors-white);
+      font: var(--font-noto-sans);
       font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
     }
-    .brandbrInstagramIcon {
-      position: relative;
-      width: 24px;
-      height: 24px;
-      overflow: hidden;
-      flex-shrink: 0;
-    }
-    .labelParent {
-      position: absolute;
-      top: calc(50% - 12px);
-      left: 0px;
+    .hero{
+      margin-top: 13.66rem;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-5xl);
+      flex-direction: column;
     }
-    .maskGroupParent {
-      position: absolute;
-      top: 30px;
-      left: 100px;
-      width: 1239.5px;
-      height: 66px;
-      text-align: left;
-      font-size: var(--font-size-base);
-    }
-    .header5 {
-      position: relative;
-      width: 1440px;
-      height: 879px;
+    .heroheader{
       text-align: center;
-      font-size: 48px;
-      color: var(--colors-white);
-      font-family: var(--font-noto-sans);
+      font-size: 3rem;
+      font-weight: 900;
     }
-    .sectionTitle1 {
-      margin: 0;
-      position: relative;
-      font-size: var(--font-size-5xl);
-      letter-spacing: 0.01em;
+    .heroPara{
+      font-size: 1.25rem;
       font-weight: 500;
-      font-family: inherit;
-      color: var(--color-darkslategray);
-      display: inline-block;
-      width: 1238px;
+      text-align: center;
+      letter-spacing: 0.0125rem;
+      max-width: 60.5rem;
+      padding: 0 1rem;
+      margin: 0 auto;
+      margin-top: 1rem;
     }
-    .redHeartIcon {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0%;
-      right: 0%;
-      bottom: 0%;
-      left: 0%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-      object-fit: cover;
-    }
-    .redHeart {
-      position: relative;
-      width: 72px;
-      height: 72px;
-    }
-    .redHeartParent {
-      align-self: stretch;
+    .heroBtndiv{
+      width: fit-content;
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: var(--gap-5xl);
+      gap: 1.25rem;
+      margin-top: 3.12rem;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .sectionHeading {
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-xl);
-    }
-    .steps4 {
+    .about{
       background-color: var(--color-antiquewhite);
-      width: 1440px;
-      display: flex;
-      flex-direction: column;
-      padding: var(--padding-121xl) var(--padding-81xl);
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: flex-start;
-      text-align: center;
-      font-size: var(--font-size-21xl);
+      padding: 8.75rem 6.25rem;
+    }
+    .aboutheader{
       color: var(--color-orangered-100);
-      font-family: var(--font-noto-sans);
-    }
-    .sectionTitle2 {
-      margin: 0;
-      position: relative;
-      font-size: inherit;
-      letter-spacing: 0.01em;
-      font-weight: 900;
-      font-family: inherit;
-      display: inline-block;
-      width: 730px;
-    }
-    .sectionHeading1 {
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
-    .autoAddedFrame {
-      align-self: stretch;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    .heading {
-      margin: 0;
-      align-self: stretch;
-      position: relative;
-      font-size: inherit;
-      letter-spacing: 0.01em;
-      font-weight: 700;
-      font-family: inherit;
-    }
-    .description {
-      align-self: stretch;
-      position: relative;
-      font-size: var(--font-size-sm);
-      letter-spacing: 0.01em;
-    }
-    .details {
-      align-self: stretch;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-base);
-    }
-    .div {
-      flex: 1;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      padding: var(--padding-base);
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-21xl);
-    }
-    .setps {
-      width: 1238px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-21xl);
-      font-size: var(--font-size-5xl);
-      color: var(--colors-white);
-    }
-    .steps5 {
-      background: linear-gradient(104.53deg, #55433b, #000);
-      width: 1440px;
-      display: flex;
-      flex-direction: column;
-      padding: var(--padding-121xl) var(--padding-81xl);
-      box-sizing: border-box;
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-21xl);
       text-align: center;
-      font-size: var(--font-size-21xl);
-      color: #fff6f0;
-      font-family: var(--font-noto-sans);
-    }
-    .patternsIcon {
-      position: absolute;
-      margin: 0 !important;
-      height: 172.35%;
-      width: 149.14%;
-      top: 0%;
-      right: -49.14%;
-      bottom: -72.35%;
-      left: 0%;
-      max-width: 100%;
-      overflow: hidden;
-      max-height: 100%;
-      opacity: 0.1;
-      z-index: 0;
-    }
-    .lastWorks {
-      margin: 0;
-      position: relative;
-      font-size: inherit;
-      letter-spacing: 0.01em;
+      font-size: 2.5rem;
       font-weight: 900;
-      font-family: inherit;
-      z-index: 1;
+      font-feature-settings: 'salt' on, 'liga' off;
+      letter-spacing: 0.025rem;
     }
-    .artistPalette {
-      position: relative;
-      width: 40px;
-      height: 40px;
+    .aboutpara{
+      margin-top: 1.25rem;
+      color: #333;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 0.015rem;
     }
-    .startupIsA {
-      align-self: stretch;
-      position: relative;
-      font-size: var(--font-size-base);
-      letter-spacing: 0.01em;
-      display: inline-block;
-      height: 130px;
-      flex-shrink: 0;
-      mix-blend-mode: normal;
-    }
-    .text {
-      align-self: stretch;
+    .aboutImgDiv{
+      margin-top: 1.25rem;
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-4xs);
-    }
-    .textParent {
-      align-self: stretch;
-      flex: 1;
-      border-radius: var(--br-xl);
-      background-color: var(--color-darkgoldenrod);
-      display: flex;
-      flex-direction: column;
-      padding: var(--padding-21xl);
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: var(--gap-21xl);
-    }
-    .frameGroup {
-      align-self: stretch;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-21xl);
-    }
-    .text3 {
-      align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      gap: 7px;
-    }
-    .works {
-      align-self: stretch;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
       justify-content: center;
-      gap: var(--gap-21xl);
-      z-index: 2;
-      text-align: left;
-      font-size: var(--font-size-5xl);
+      gap: 1.5rem;
+      
+    }
+    .aboutImg{
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+    .works{
+      padding: 8.75rem 6.25rem;
+      background: linear-gradient(105deg, #55433B 0%, #000 100%);
+    }
+    .worksheader{
+      text-align: center;
+      font-weight: 900;
+      font-size: 2.5rem;
+      font-feature-settings: 'salt' on, 'liga' off;
+    }
+    .workscontainer{
+      margin-top: 2.5rem;
+      display: flex;
+      column-gap: 3.5rem;
+    }
+    .work{
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+    }
+    .workImg{
+      width: 4.5rem;
+      height: 4.5rem;
+      object-fit: fill;
+    }
+    .workheader{
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-feature-settings: 'salt' on, 'liga' off;
+      letter-spacing: 0.015rem;
+      text-align: center;
+    }
+    .workpara{
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      font-feature-settings: 'salt' on, 'liga' off;
+      text-align: center;
+    }
+    .workbtnDiv{
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 2.5rem;
+    }
+    .categories{
+      padding: 8.75rem 6.75rem;
+      background: linear-gradient(0deg, #FFF8F3 0%, #FFF8F3 100%);
+    }
+    .categoriesHeader{
+      color: #271811;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 0.025rem;
+    }
+    .categoriescontainer{
+      margin-top: 2.5rem;
+      display: flex;
+      column-gap: 2.5rem;
+      /* align-items: stretch; */
+    }
+    .category{
+      align-self: stretch;
+      padding: 2.5rem;
+      background: rgba(194, 119, 0, 0.1);
+      border-radius: 1.25rem;
       color: var(--color-black);
     }
-    .showcase10 {
-      align-self: stretch;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      padding: var(--padding-121xl) var(--padding-81xl);
-      align-items: center;
-      justify-content: flex-start;
-      position: relative;
-      gap: var(--gap-19xl);
-      background-image: url("/public/showcase-10@3x.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-      text-align: center;
-      font-size: var(--font-size-21xl);
-      color: #271811;
-      font-family: var(--font-noto-sans);
+    .categoryImg{
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: fill;
     }
-    .twentyFiveAwesome {
-      margin: 0;
-      position: relative;
-      font-size: inherit;
-      letter-spacing: 0.01em;
+    .categoryheader{
+      margin-top: 0.56rem;
+      font-size: 1.5rem;
       font-weight: 700;
-      font-family: inherit;
+      letter-spacing: 0.015rem;
     }
-    .twentyFiveAwesomeParent {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-      gap: var(--gap-base);
+    .categorypara{
+      margin-top: 0.56rem;
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
     }
-    .title {
-      position: relative;
-      width: 882px;
-      height: 40px;
+    .categorybtnDiv{
+      margin-top: 3.5rem;
     }
-    .bigFill9 {
-      cursor: pointer;
-      border: none;
-      padding: var(--padding-xl) var(--padding-21xl);
-      background-color: #060201;
-      border-radius: var(--br-xl);
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      box-sizing: border-box;
-      align-items: center;
+   .banner{
+    padding: 2.5rem 6.25rem;
+    background-color: var(--color-orangered-100);
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+   } 
+   .bannertext{
+    font-weight: 700;
+    letter-spacing: 0.015rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1rem;
+   }
+   .bannerBtn{
+    outline: none;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 1.25rem;
+    background-color: #060201;
+    color: var(--colors-white);
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    min-width: 164px;
+   }
+   .bannerImg{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: fill;
+   }
+   .footer{
+    width: 100%;
+    height: 54.1875rem;
+    background: url('../public/showcase-101@3x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    /* background-color: orange; */
+   }
+   /* media queries */
+   @media screen and (max-width: 980px){
+    .nav{
+      max-width: 100%;
       justify-content: center;
     }
-    .callToAction11 {
-      align-self: stretch;
-      background-color: var(--color-orangered-100);
-      overflow: hidden;
-      display: flex;
-      flex-direction: row;
-      padding: var(--padding-21xl) var(--padding-81xl);
-      align-items: center;
-      justify-content: space-between;
-      text-align: left;
-      font-size: var(--font-size-5xl);
-      color: var(--colors-white);
-      font-family: var(--font-noto-sans);
+    .navUl{
+      display:none;
     }
-    .maskGroupIcon1 {
-      position: relative;
-      width: 206.5px;
-      height: 82.6px;
-      object-fit: cover;
-      z-index: 0;
+    .navBtnDiv{
+      display: none;
     }
-    .allOfThese1 {
-      position: absolute;
-      margin: 0 !important;
-      bottom: 40px;
-      left: 604.5px;
-      letter-spacing: 0.01em;
-      font-weight: 500;
-      mix-blend-mode: normal;
-      z-index: 1;
+    .hero{
+      margin-top: 9rem;
     }
-    .showcase101 {
-      align-self: stretch;
-      height: 867px;
-      overflow: hidden;
-      flex-shrink: 0;
-      display: flex;
+    .banner{
       flex-direction: column;
-      padding: var(--padding-81xl);
-      box-sizing: border-box;
-      align-items: center;
       justify-content: center;
-      position: relative;
-      gap: var(--gap-19xl);
-      background-image: url("/public/showcase-101@3x.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top;
-      text-align: left;
-      font-size: var(--font-size-xl);
-      color: var(--colors-white);
-      font-family: var(--font-noto-sans);
     }
-    .landingPage {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
+    .bannertext{
+      text-align: center;
+      flex-direction: column;
+    }
+    .bannerImg{
+      transform: rotate(90deg);
+    }
+    .bannerBtn{
+      margin-top: 0.5rem;
+    }
+    .workscontainer{
+      flex-direction: column;
+      row-gap: 3rem;
+    }
+   }
+   @media screen and (max-width: 800px){
+    .categoriescontainer{
+      flex-direction: column;
+      row-gap: 2.5rem;
+    }
+    .category{
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
-      font-size: var(--font-size-sm);
-      color: var(--color-gray-100);
-      font-family: var(--font-sf-pro-display);
+      align-items: center;
+      text-align: center;
     }
     
-
-
+   }
+   @media screen and (max-width: 500px){
+    .hero{
+      margin-top: 5.02rem;
+    }
+    .heroheader{
+      font-size: 1.5rem;
+      letter-spacing: 0.015rem;
+    }
+    .heroPara{
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
+    }
+    .about{
+      padding: 5rem 1rem;
+    }
+    .aboutheader{
+      font-size: 1.5rem;
+      letter-spacing: 0.015rem;
+    }
+    .aboutpara{
+      font-size: 1rem;
+      letter-spacing: 0.01rem;
+    }
+    .banner{
+      padding: 2.5rem 1rem;
+    }
+    .bannertext{
+      font-size: 1.25rem;
+      letter-spacing: 0.0125rem;
+      row-gap: 1rem;
+    }
+    .works{
+      padding: 5rem 1rem;
+    }
+    .worksheader{
+      font-size: 1.5rem;
+      letter-spacing: 0.015rem;
+    }
+    .workscontainer{
+      margin-top: 3.5rem;
+      row-gap: 4rem;
+    }
+    .workheader{
+      font-size: 1.25rem;
+      letter-spacing: 0.0125rem;
+    }
+    .workpara{
+      font-size: 0.875rem;
+      letter-spacing: 0.00875rem;
+    }
+    .categories{
+      padding: 5rem 1rem;
+    }
+    .categoriesHeader{
+      font-size: 1.5rem;
+      letter-spacing: 0.015rem;
+    }
+    .categoryheader{
+      font-size: 1.5rem;
+    }
+    .categorybtnDiv{
+      margin-top: 5rem;
+    }
+   }
 
   </style>
